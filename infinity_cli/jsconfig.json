@@ -1,0 +1,22 @@
+{
+    "typeAcquisition": {
+        "include": [
+            "lodash",
+            "react-redux",
+            "react-router",
+            "react-router-redux",
+            "redux",
+            "redux-promise-middleware",
+            "redux-thunk"
+
+        ]
+    },
+    "compilerOptions": {
+        "target": "ES6",
+        "module": "commonjs"
+    },
+    "include": [
+        "src"
+    ],
+    "compileOnSave": true
+}

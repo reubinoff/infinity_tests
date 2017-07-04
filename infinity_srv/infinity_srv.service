@@ -1,0 +1,14 @@
+[Unit]
+Description=Infinity Service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/nodejs /opt/infinity/infinity_srv/app.js
+Restart=always
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=node-sample
+Environment=NODE_ENV=production
+
+[Install]
+WantedBy=multi-user.target
